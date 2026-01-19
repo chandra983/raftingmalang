@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Malang Rafting Adventure - Paket Wisata Arung Jeram Terbaik (Clay Edition)</title>
+    <meta name="description" content="Wisata rafting terbaik di Malang dengan konsep pelayanan profesional. Paket arung jeram murah mulai 150rb, outbound, dan family trip. Booking sekarang!">
+    <meta name="keywords" content="rafting malang, arung jeram malang, paket rafting murah, wisata batu malang, outbound malang, rafting kasembon, rafting batu">
+    <meta name="author" content="Malang Rafting Adventure">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.malangrafting.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.malangrafting.com/">
+    <meta property="og:title" content="Malang Rafting Adventure - Serunya Taklukkan Sungai!">
+    <meta property="og:description" content="Paket wisata arung jeram dan outbound #1 di Malang. Aman untuk pemula dan keluarga.">
+    <meta property="og:image" content="https://www.malangrafting.com/img/og-image.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Malang Rafting Adventure">
+    <meta property="twitter:description" content="Wisata adrenalin terbaik di Malang. Cek promo paket terbaru kami.">
+    <meta property="twitter:image" content="https://www.malangrafting.com/img/og-image.jpg">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#F0F4FA">
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsActivityLocation",
+      "name": "Malang Rafting Adventure",
+      "image": "https://www.malangrafting.com/img/index.webp",
+      "description": "Penyedia layanan wisata arung jeram (rafting) dan outbound training profesional di Malang.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Raya Tlogomas No. 1",
+        "addressLocality": "Malang",
+        "addressRegion": "Jawa Timur",
+        "postalCode": "65144",
+        "addressCountry": "ID"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-7.9234",
+        "longitude": "112.6071"
+      },
+      "url": "https://www.malangrafting.com",
+      "telephone": "+628123456789",
+      "priceRange": "Rp 150.000 - Rp 250.000",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "1250"
+      }
+    }
+    </script>
+
+    <style>
+        /* =========================================
+           CLAYMORPHISM CORE
+           ========================================= */
+        :root {
+            --clay-bg: #F0F4FA;
+            --clay-text: #2c3e50;
+            --clay-primary: #0EA5E9;
+            --clay-primary-dark: #0284C7;
+            
+            --shadow-clay-card: 
+                16px 16px 32px rgba(174, 190, 205, 0.4), 
+                -10px -10px 24px rgba(255, 255, 255, 1),
+                inset 6px 6px 12px rgba(14, 165, 233, 0.05);
+            
+            --shadow-clay-btn:
+                8px 8px 16px rgba(14, 165, 233, 0.3),
+                -6px -6px 12px rgba(255, 255, 255, 0.5),
+                inset 4px 4px 8px rgba(255, 255, 255, 0.2);
+
+            --shadow-clay-pressed:
+                inset 6px 6px 12px #d1d9e6,
+                inset -6px -6px 12px #ffffff;
+        }
+
+        body {
+            background-color: var(--clay-bg);
+            color: var(--clay-text);
+            font-family: system-ui, -apple-system, sans-serif;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 { font-weight: 900 !important; color: #1e293b; }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem !important; }
+            h2 { font-size: 2rem !important; }
+            .display-3, .display-4 { font-size: 2.2rem !important; }
+        }
+
+        /* COMPONENTS */
+        .clay-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border-radius: 32px;
+            border: 1px solid rgba(255,255,255,0.6);
+            box-shadow: var(--shadow-clay-card);
+            padding: 2rem;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+        @media (max-width: 768px) { .clay-card { padding: 1.5rem; border-radius: 24px; } }
+        .clay-card:hover { transform: translateY(-5px); }
+
+        .btn-clay {
+            border: none; border-radius: 20px; padding: 12px 28px; font-weight: 800;
+            background: linear-gradient(135deg, #38bdf8 0%, #0284C7 100%);
+            color: white; box-shadow: var(--shadow-clay-btn); transition: 0.2s;
+            text-decoration: none; display: inline-block; cursor: pointer;
+        }
+        .btn-clay:hover { color: white; transform: translateY(-3px); }
+        .btn-clay:active { transform: scale(0.95); }
+
+        .form-control-clay {
+            border: none; background: #EAF0F6; border-radius: 16px; padding: 16px;
+            box-shadow: var(--shadow-clay-pressed);
+        }
+        .form-control-clay:focus { outline: none; background: #fff; }
+
+        /* Navbar & Footer Logo */
+        .navbar-logo { max-height: 50px; width: auto; }
+        @media (max-width: 768px) { .navbar-logo { max-height: 40px; } }
+        
+        .navbar-clay {
+            background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px);
+            border-radius: 0 0 32px 32px; padding: 0.8rem 0;
+        }
+
+        /* FAQ Accordion */
+        .accordion-clay .accordion-item { background: transparent; border: none; margin-bottom: 20px; }
+        .accordion-clay .accordion-button {
+            background: rgba(255,255,255,0.9); border-radius: 20px !important;
+            box-shadow: var(--shadow-clay-card); color: var(--clay-text); font-weight: 800; padding: 20px;
+        }
+        .accordion-clay .accordion-button:not(.collapsed) {
+            background: #e0f2fe; color: var(--clay-primary-dark);
+            box-shadow: inset 4px 4px 8px rgba(14, 165, 233, 0.1);
+        }
+        .accordion-clay .accordion-body {
+            background: rgba(255,255,255,0.6); border-radius: 0 0 20px 20px;
+            margin-top: -15px; padding-top: 30px; box-shadow: var(--shadow-clay-pressed);
+        }
+
+        /* Blobs */
+        .blob { position: fixed; border-radius: 50%; filter: blur(60px); z-index: -1; opacity: 0.6; }
+        .blob-1 { top: -10%; left: -10%; width: 50vw; height: 50vw; background: rgba(14, 165, 233, 0.15); }
+        .blob-2 { bottom: -10%; right: -10%; width: 60vw; height: 60vw; background: rgba(56, 189, 248, 0.15); }
+        
+        /* Floating Buttons */
+        .float-btn {
+            width: 55px; height: 55px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 24px; box-shadow: var(--shadow-clay-btn);
+            position: fixed; z-index: 1000; border:none; transition: 0.3s;
+            text-decoration: none;
+        }
+        .wa-float { background: #25d366; color: white; bottom: 25px; right: 25px; }
+        .top-float { background: white; color: var(--clay-primary); bottom: 90px; right: 25px; display: none; }
+
+        /* Responsive Hero Image */
+        .hero-img-container { transform: rotate(3deg); transition: 0.5s; }
+        @media (max-width: 991px) { .hero-img-container { margin-top: 40px; transform: rotate(0deg); padding: 0 20px; } }
+    </style>
+</head>
+<body>
+
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-clay sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#" aria-label="Beranda Malang Rafting">
+                <img src="img/logo.webp" alt="Malang Rafting Logo" width="150" height="50" class="navbar-logo">
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-lg-3 text-center align-items-center">
+                    <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#hero">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#about">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#packages">Paket</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold text-dark" href="#blog">Blog</a></li>
+                    <li class="nav-item w-100 w-lg-auto">
+                        <a href="#contact" class="btn btn-clay d-block d-lg-inline-block mt-3 mt-lg-0">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="d-flex align-items-center py-5 py-lg-0" style="min-height: 90vh;">
+        <div class="container">
+            <div class="row align-items-center flex-column-reverse flex-lg-row">
+                <div class="col-lg-6 mt-4 mt-lg-0 text-center text-lg-start">
+                    <span class="badge bg-white text-clay-primary text-black shadow-sm rounded-pill px-3 py-2 mb-3 fw-bold">
+                        🌊 Wisata Terbaik Malang
+                    </span>
+                    <h1 class="display-3 lh-sm mb-3">Arung Jeram <br><span class="text-clay-primary">Penuh Aksi!</span></h1>
+                    <p class="lead text-secondary mb-4 fw-medium mx-auto mx-lg-0" style="max-width: 500px;">
+                        Nikmati petualangan seru menyusuri sungai Malang dengan standar keamanan tinggi dan pemandangan eksotis.
+                    </p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#packages" class="btn btn-clay btn-lg">Pilih Paket</a>
+                        <a href="https://wa.me/628123456789?text=Halo,%20saya%20tertarik%20lihat%20video%20raftingnya" class="btn btn-light text-primary btn-lg rounded-pill shadow-sm fw-bold">
+                            <i class="bi bi-play-fill"></i> Video
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 hero-img-container">
+                    <div class="clay-card p-2 p-lg-3">
+                        <img src="img/index.webp" alt="Keseruan Rafting di Sungai Malang" width="600" height="400" fetchpriority="high" class="img-fluid rounded-4 w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="clay-card bg-white">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 mb-4 mb-lg-0">
+                        <img src="img/about.webp" loading="lazy" width="500" height="350" class="img-fluid rounded-4 w-100 shadow-sm" alt="Tim Pemandu Rafting Profesional">
+                    </div>
+                    <div class="col-lg-7 ps-lg-5 text-center text-lg-start">
+                        <h6 class="text-clay-primary fw-bold text-uppercase">Tentang Kami</h6>
+                        <h2 class="mb-3">Profesional & Aman</h2>
+                        <p class="text-muted mb-4">
+                            Kami adalah operator rafting bersertifikat yang mengutamakan keselamatan tanpa mengurangi keseruan. Peralatan kami standar internasional dan selalu dirawat.
+                        </p>
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="p-3 rounded-4 bg-light text-center">
+                                    <h3 class="fw-bold text-clay-primary mb-0">100%</h3>
+                                    <small class="fw-bold">Safety Record</small>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="p-3 rounded-4 bg-light text-center">
+                                    <h3 class="fw-bold text-clay-primary mb-0">5rb+</h3>
+                                    <small class="fw-bold">Tamu Puas</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Layanan Kami</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="clay-card text-center p-4">
+                        <i class="bi bi-camera fs-1 text-clay-primary mb-3 d-block"></i>
+                        <h4 class="fw-bold">Dokumentasi</h4>
+                        <p class="text-muted small">Foto dan Video gratis untuk setiap grup.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="clay-card text-center p-4">
+                        <i class="bi bi-shield-check fs-1 text-success mb-3 d-block"></i>
+                        <h4 class="fw-bold">Asuransi</h4>
+                        <p class="text-muted small">Cover asuransi lengkap untuk ketenangan Anda.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="clay-card text-center p-4">
+                        <i class="bi bi-cup-hot fs-1 text-warning mb-3 d-block"></i>
+                        <h4 class="fw-bold">Makan Siang</h4>
+                        <p class="text-muted small">Menu prasmanan khas pedesaan yang lezat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="clay-card bg-primary text-white text-center p-4 p-lg-5" style="background: linear-gradient(135deg, #38bdf8 0%, #0284C7 100%);">
+                <h2 class="fw-bold mb-2">Liburan Seru Menanti!</h2>
+                <p class="mb-4 opacity-90">Jangan sampai kehabisan slot untuk akhir pekan ini.</p>
+                <a href="https://wa.me/628123456789?text=Halo%20admin,%20saya%20mau%20tanya%20ketersediaan%20slot" class="btn btn-light text-primary btn-lg rounded-pill fw-bold px-5">Booking WA</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h6 class="text-clay-primary fw-bold">PAKET HEMAT</h6>
+                <h2 class="fw-bold">Pilihan Paket</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="clay-card text-center h-100">
+                        <h4 class="fw-bold text-muted">Fun Trip</h4>
+                        <h2 class="display-4 fw-bold my-3 text-clay-primary">150K</h2>
+                        <ul class="list-unstyled mb-4 small text-muted">
+                            <li class="mb-2">✅ Jarak 7 KM</li>
+                            <li class="mb-2">✅ Snack & Minum</li>
+                            <li class="mb-2">✅ Guide & Rescue</li>
+                        </ul>
+                        <a href="https://wa.me/628123456789?text=Halo%20Admin,%20saya%20mau%20booking%20paket%20Fun%20Trip%20(150K)" class="btn btn-outline-primary w-100 rounded-pill fw-bold" target="_blank">Pilih Paket</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="clay-card text-center h-100 border-2 border-primary position-relative">
+                        <span class="position-absolute top-0 start-50 translate-middle badge bg-warning text-dark px-3 rounded-pill fw-bold">BEST SELLER</span>
+                        <h4 class="fw-bold text-primary mt-2">Adventure</h4>
+                        <h2 class="display-4 fw-bold my-3 text-clay-primary">185K</h2>
+                        <ul class="list-unstyled mb-4 small text-dark fw-bold">
+                            <li class="mb-2">✅ Jarak 10 KM</li>
+                            <li class="mb-2">✅ Makan Prasmanan</li>
+                            <li class="mb-2">✅ Dokumentasi</li>
+                        </ul>
+                        <a href="https://wa.me/628123456789?text=Halo%20Admin,%20saya%20mau%20booking%20paket%20Adventure%20(185K)" class="btn btn-clay w-100" target="_blank">Pilih Paket</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="clay-card text-center h-100">
+                        <h4 class="fw-bold text-muted">Full Day</h4>
+                        <h2 class="display-4 fw-bold my-3 text-clay-primary">250K</h2>
+                        <ul class="list-unstyled mb-4 small text-muted">
+                            <li class="mb-2">✅ Rafting + Outbound</li>
+                            <li class="mb-2">✅ 2x Makan</li>
+                            <li class="mb-2">✅ Paintball (Opsional)</li>
+                        </ul>
+                         <a href="https://wa.me/628123456789?text=Halo%20Admin,%20saya%20mau%20booking%20paket%20Full%20Day%20(250K)" class="btn btn-outline-primary w-100 rounded-pill fw-bold" target="_blank">Pilih Paket</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-4">Galeri Keseruan</h2>
+            <div class="row g-3">
+                <div class="col-6 col-md-4">
+                    <img src="img/galeri1.webp" loading="lazy" width="400" height="300" class="img-fluid rounded-4 shadow-sm w-100" alt="Galeri Rafting 1">
+                </div>
+                <div class="col-6 col-md-4">
+                    <img src="img/galeri2.webp" loading="lazy" width="400" height="300" class="img-fluid rounded-4 shadow-sm w-100" alt="Galeri Rafting 2">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img src="img/galeri3.webp" loading="lazy" width="400" height="300" class="img-fluid rounded-4 shadow-sm w-100" alt="Galeri Rafting 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-5">Kata Mereka</h2>
+            <div id="testiCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="clay-card text-center mx-auto" style="max-width: 600px;">
+                            <p class="fst-italic fs-5">"Seru banget! Pemandunya ramah dan makanannya enak."</p>
+                            <h6 class="fw-bold mt-3">- Budi, Surabaya</h6>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="clay-card text-center mx-auto" style="max-width: 600px;">
+                            <p class="fst-italic fs-5">"Sungainya bersih, airnya pas. Recommended buat family."</p>
+                            <h6 class="fw-bold mt-3">- Siti, Jakarta</h6>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testiCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testiCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-5" itemscope itemtype="https://schema.org/FAQPage">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-5">FAQ</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion accordion-clay" id="faqAccordion">
+                        <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <h2 class="accordion-header" itemprop="name">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    Apakah aman bagi pemula?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                <div class="accordion-body" itemprop="text">
+                                    <strong>Sangat Aman.</strong> Kami menyediakan pelampung standar internasional dan pemandu.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <h2 class="accordion-header" itemprop="name">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    Apa yang harus dibawa?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                <div class="accordion-body" itemprop="text">
+                                    Pakaian ganti, peralatan mandi, sunblock, dan sandal yang nyaman.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="py-5">
+        <div class="container">
+            <h2 class="fw-bold mb-4">Tips & Info</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="clay-card p-0 overflow-hidden h-100">
+                        <img src="img/blog/blog1.webp" loading="lazy" width="400" height="250" class="w-100" alt="Tips Aman Rafting">
+                        <div class="p-4">
+                            <h5 class="fw-bold">Tips Aman Rafting</h5>
+                            <p class="text-muted small mb-3">Persiapan penting sebelum arung jeram...</p>
+                            <a href="tips-aman.html" class="text-decoration-none fw-bold small">Baca Selengkapnya →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="clay-card p-0 overflow-hidden h-100">
+                        <img src="img/blog/blog2.webp" loading="lazy" width="400" height="250" class="w-100" alt="Wisata Sekitar Lokasi">
+                        <div class="p-4">
+                            <h5 class="fw-bold">Wisata Sekitar</h5>
+                            <p class="text-muted small mb-3">Tempat seru lain dekat lokasi rafting...</p>
+                            <a href="wisata-sekitar.html" class="text-decoration-none fw-bold small">Baca Selengkapnya →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="clay-card p-0 overflow-hidden h-100">
+                        <img src="img/blog/blog3.webp" loading="lazy" width="400" height="250" class="w-100" alt="Kuliner Khas Malang">
+                        <div class="p-4">
+                            <h5 class="fw-bold">Kuliner Khas</h5>
+                            <p class="text-muted small mb-3">Makanan wajib coba setelah lelah bermain air...</p>
+                            <a href="kuliner-khas.html" class="text-decoration-none fw-bold small">Baca Selengkapnya →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-white bg-opacity-50" style="backdrop-filter: blur(10px);">
+        <div class="container">
+            <h2 class="fw-bold mb-5 text-center">Hubungi Kami</h2>
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <div class="clay-card p-4 h-100 bg-white">
+                        <h4 class="fw-bold mb-4">Info Kontak</h4>
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="me-3 text-clay-primary fs-4"><i class="bi bi-geo-alt-fill"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-0">Alamat Basecamp</h6>
+                                <p class="text-muted small">Jl. Raya Tlogomas No. 1, Malang, Jawa Timur</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="me-3 text-clay-primary fs-4"><i class="bi bi-whatsapp"></i></div>
+                            <div>
+                                <h6 class="fw-bold mb-0">WhatsApp</h6>
+                                <p class="text-muted small">+62 812-3456-7890</p>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <h6 class="fw-bold mb-2">Social Media</h6>
+                            <div class="d-flex gap-2">
+                                <a href="#" class="btn btn-outline-primary rounded-circle" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="btn btn-outline-primary rounded-circle" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="btn btn-outline-primary rounded-circle" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <form class="clay-card bg-white p-4 h-100" id="contactForm" onsubmit="sendMessageToWhatsapp(event)">
+                        <h4 class="fw-bold mb-3">Kirim Pesan</h4>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" id="waName" class="form-control form-control-clay" placeholder="Nama Lengkap" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" id="waPhone" class="form-control form-control-clay" placeholder="Nomor HP / WA">
+                            </div>
+                            <div class="col-12">
+                                <textarea id="waMessage" class="form-control form-control-clay" rows="4" placeholder="Tulis Pesan Anda..." required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-clay w-100">Kirim Ke WhatsApp</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5" style="background: #1e293b; color: white;">
+        <div class="container">
+            <div class="row g-4 justify-content-between">
+                <div class="col-lg-4">
+                    <img src="img/logo.webp" alt="Logo Footer Malang Rafting" width="150" height="50" class="navbar-logo mb-3 opacity-75">
+                    <p class="text-white-50 small">
+                        Penyedia layanan wisata arung jeram (rafting) terbaik dan terpercaya di Malang Raya. Mengutamakan keselamatan dan kepuasan pelanggan.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="fw-bold mb-3">Menu</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2"><a href="#hero" class="text-decoration-none text-white-50">Beranda</a></li>
+                        <li class="mb-2"><a href="#packages" class="text-decoration-none text-white-50">Paket</a></li>
+                        <li class="mb-2"><a href="#gallery" class="text-decoration-none text-white-50">Galeri</a></li>
+                        <li class="mb-2"><a href="#faq" class="text-decoration-none text-white-50">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3">Pembayaran</h5>
+                    <div class="d-flex gap-2 flex-wrap">
+                        <span class="badge bg-secondary">BCA</span>
+                        <span class="badge bg-secondary">Mandiri</span>
+                        <span class="badge bg-secondary">QRIS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="border-top border-secondary border-opacity-25 mt-5 pt-4 text-center">
+                <small class="text-white-50">&copy; 2026 Malang Rafting Adventure. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/628123456789?text=Halo%20Admin,%20saya%20butuh%20bantuan" class="float-btn wa-float" title="Chat WA" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+    <button onclick="scrollToTop()" id="scrollTopBtn" class="float-btn top-float" aria-label="Kembali ke atas"><i class="bi bi-arrow-up"></i></button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Scroll Top Logic
+        let mybutton = document.getElementById("scrollTopBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                mybutton.style.display = "flex";
+            } else {
+                mybutton.style.display = "none";
+            }
+        };
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        // UPDATE: Fungsi Kirim Pesan ke WhatsApp
+        function sendMessageToWhatsapp(event) {
+            event.preventDefault(); // Mencegah reload halaman
+            
+            // Ambil nilai dari input berdasarkan ID
+            const name = document.getElementById('waName').value;
+            const phone = document.getElementById('waPhone').value;
+            const message = document.getElementById('waMessage').value;
+            
+            // Nomor Admin (Ganti sesuai nomor asli)
+            const adminNumber = "628123456789"; 
+            
+            // Format Pesan
+            const text = `Halo Admin, saya ingin bertanya via Website.\n\nNama: ${name}\nNo HP: ${phone}\nPesan: ${message}`;
+            
+            // Buat URL WhatsApp
+            const url = `https://wa.me/${adminNumber}?text=${encodeURIComponent(text)}`;
+            
+            // Buka tab baru
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
